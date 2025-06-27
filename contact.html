@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Travel & Tourism</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }      
+
+    html,
+    body { 
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 12px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo { 
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    .logo .highlight {
+      color: #ff4c4c;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: #ff4c4c;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-section {
+      height: 90vh;
+      background: url('https://wallpaperaccess.com/full/5672323.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .hero-text h1 {
+      color: #fff;
+      font-size: 3rem;
+      text-shadow: 2px 2px 15px black;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    .contact-container {
+      max-width: 500px;
+      margin: 100px auto 50px;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      color: #e63b3b;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #ff4c4c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d93737;
+    }
+
+    footer {
+      background: #23272f;
+      color: #fff;
+      text-align: center;
+      padding: 24px 10px 12px;
+      margin-top: 50px;
+    }
+
+    .footer-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .footer-content .socials {
+      margin-top: 10px;
+    }
+
+    .footer-content a {
+      color: #00bfff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: color 0.2s;
+    }
+
+    .footer-content a:hover {
+      color: #ff4c4c;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-earth-americas"></i>
+      <span>Travel & <span class="highlight">Tourism</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./services.html">Our Services</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./login.html">Login / Signup</a>
+    </div>
+  </header>    
+
+  <div class="hero-section">
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+
+  <div class="contact-container" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile No</label>
+        <input type="tel" id="mobile" placeholder="Enter your mobile number" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message here" required></textarea>
+      </div>
+      <center>
+        <button type="submit">Send Message</button>
+      </center>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 YourTravelWebsite.com | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
