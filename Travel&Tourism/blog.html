@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel & Tourism Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    .blog-section {
+      max-width: 1100px;
+      margin: 40px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .blog-heading {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #2d3142;
+      letter-spacing: 1px;
+    }
+
+    .blog-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .blog-post {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(44, 62, 80, 0.09);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-1px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.14);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 22px 18px 18px 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      color: #1b1f3b;
+      margin-bottom: 9px;
+    }
+
+    .blog-meta {
+      font-size: 0.92rem;
+      color: #6c757d;
+      margin-bottom: 12px;
+    }
+
+    .blog-desc {
+      font-size: 1.04rem;
+      color: #2d3142;
+      margin-bottom: 18px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-earth-americas"></i>
+      <span>Travel & <span class="highlight">Tourism</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./services.html">Our Services</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./login.html">Login / Signup</a>
+    </div>
+  </header>    
+
+  <section class="blog-section">
+    <h1 class="blog-heading">✈️ Latest from Our Travel Blog</h1>
+    <div class="blog-list">
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+          alt="Paris in Spring">
+        <div class="blog-content">
+          <div class="blog-title">Paris in Spring: Top 5 Must-See Spots</div>
+          <div class="blog-meta"><i class="fa fa-calendar"></i> June 10, 2025 &nbsp; | &nbsp; <i class="fa fa-user"></i>
+            by Anna</div>
+          <div class="blog-desc">
+            Experience the romance of Paris in full bloom! From the Eiffel Tower to Montmartre, discover the best places
+            to visit and tips for first-timers.
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80"
+          alt="Bali Adventure">
+        <div class="blog-content">
+          <div class="blog-title">Bali Adventure: Beaches, Temples & Culture</div>
+          <div class="blog-meta"><i class="fa fa-calendar"></i> May 28, 2025 &nbsp; | &nbsp; <i class="fa fa-user"></i>
+            by Rahul</div>
+          <div class="blog-desc">
+            Bali offers more than just beaches! Explore hidden temples, lush rice terraces, and vibrant culture in our
+            Bali adventure guide.
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+          alt="Swiss Alps">
+        <div class="blog-content">
+          <div class="blog-title">Swiss Alps: A Journey Through Snowy Peaks</div>
+          <div class="blog-meta"><i class="fa fa-calendar"></i> May 18, 2025 &nbsp; | &nbsp; <i class="fa fa-user"></i>
+            by Lisa</div>
+          <div class="blog-desc">
+            Dreaming of snowy adventures? Our Swiss Alps travelogue covers scenic train rides, cozy chalets, and
+            breathtaking mountain views.
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80"
+          alt="Tokyo Street Life">
+        <div class="blog-content">
+          <div class="blog-title">Tokyo Street Life: Food, Fashion & Fun</div>
+          <div class="blog-meta"><i class="fa fa-calendar"></i> April 30, 2025 &nbsp; | &nbsp; <i
+              class="fa fa-user"></i> by Kenji</div>
+          <div class="blog-desc">
+            Dive into Tokyo’s vibrant neighborhoods, taste authentic street food, and experience the city’s unique blend
+            of tradition and technology.
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Travel&Tourism.com | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
